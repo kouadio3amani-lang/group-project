@@ -714,7 +714,7 @@ RESPONSIVE
   .footer__col.footer__brand { grid-column: span 2; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 468px) {
   :root { --space-xl: 56px; }
 
   .hero { min-height: auto; }
