@@ -1,10 +1,6 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
- /* TOKENS */
+
+/* 1. TOKENS  */
 :root {
   /* Couleurs */
   --yellow:      #F5B51A;
@@ -49,7 +45,7 @@
 }
 
 
- /* RESET */
+/* 2. RESET  */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html  { scroll-behavior: smooth; font-size: 16px; }
 body  { font-family: var(--font-body); color: var(--text); background: var(--white); overflow-x: hidden; line-height: 1.6; }
@@ -59,7 +55,7 @@ ul    { list-style: none; }
 button { font-family: var(--font-body); }
 
 
-/* LAYOUT HELPERS  */
+ /* 3. LAYOUT HELPERS */
 .container {
   width: 100%;
   max-width: var(--container);
@@ -68,7 +64,7 @@ button { font-family: var(--font-body); }
 }
 
 
-/* TYPOGRAPHY  */
+ /* 4. TYPOGRAPHY  */
 .kicker {
   display: inline-block;
   background: var(--yellow);
@@ -104,7 +100,7 @@ button { font-family: var(--font-body); }
 }
 
 
-/* BUTTONS  */
+ /* 5. BUTTONS  */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -130,13 +126,6 @@ button { font-family: var(--font-body); }
 .btn--red:hover  { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(224,43,43,0.40); }
 .btn--red:active { transform: translateY(0); }
 
-.btn--outline {
-  background: transparent;
-  color: var(--dark);
-  border-color: var(--dark);
-  padding: 12px 30px;
-}
-.btn--outline:hover { background: var(--dark); color: var(--white); }
 
 .btn--sm { padding: 10px 22px; font-size: 0.82rem; }
 
@@ -159,7 +148,7 @@ button { font-family: var(--font-body); }
 .btn--submit:hover  { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(224,43,43,0.40); }
 
 
-/* NAVBAR  */
+ /* 6. NAVBAR  */
 .site-header {
   position: fixed; top: 0; left: 0; width: 100%;
   background: var(--white);
@@ -267,7 +256,7 @@ button { font-family: var(--font-body); }
 .navbar__mobile a:hover { color: var(--red); }
 
 
- /* HERO  */
+ /* 7. HERO  */
 .hero {
   margin-top: var(--navbar-h);
   background: var(--yellow);
@@ -364,7 +353,7 @@ button { font-family: var(--font-body); }
 .badge__label       { font-weight: 800; font-size: 0.65rem; text-transform: uppercase; opacity: 0.85; margin-top: 2px; }
 
 
-/* FEATURED  */
+ /* 8. FEATURED  */
 .featured { padding: var(--space-xl) 0; background: var(--white); }
 
 .featured__grid {
@@ -424,7 +413,7 @@ button { font-family: var(--font-body); }
 
 
 
-/* MENU */
+ /* 9. MENU  */
 .menu { padding: var(--space-xl) 0; background: var(--off-white); }
 
 .menu__grid {
@@ -485,9 +474,7 @@ button { font-family: var(--font-body); }
 }
 
 
-
-
-/* EVENTS  */
+ /* 10. EVENTS  */
 .events { padding: var(--space-xl) 0; background: var(--gray-100); }
 
 .events__inner {
@@ -530,7 +517,7 @@ button { font-family: var(--font-body); }
 .events__img:hover img { transform: scale(1.04); }
 
 
- /* RESERVATION  */
+ /* 11. RESERVATION  */
 .reservation { padding: var(--space-xl) 0; background: var(--white); }
 
 .reservation__inner { max-width: 720px; margin-inline: auto; }
@@ -577,7 +564,7 @@ button { font-family: var(--font-body); }
 .form-field input::placeholder { color: var(--gray-400); }
 
 
-/* FOOTER  */
+ /* 12. FOOTER  */
 .site-footer { color: var(--white); }
 
 .footer__top {
@@ -683,7 +670,7 @@ button { font-family: var(--font-body); }
 }
 
 
-/* ANIMATIONS  */
+ /* 13. ANIMATIONS  */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -695,10 +682,17 @@ button { font-family: var(--font-body); }
 .hero__badge   { animation: badge-pulse 3s ease-in-out infinite, fadeUp 0.6s 0.5s ease both; }
 
 
-RESPONSIVE 
+<<<<<<< HEAD
+ /* 14. RESPONSIVE  */
 @media (max-width: 960px) {
   .navbar__links,
   .navbar__cta    { display: none; }
+=======
+/* #RESPONSIVE  */
+@media  (max-width: 960px) {
+  
+  .navbar__links,.navbar__cta    { display: none; }
+>>>>>>> d18272f262fd3ae8cb412392f2ed4fa813ecaa59
   .navbar__toggle { display: flex; }
 
   .hero__inner    { flex-direction: column; align-items: flex-start; padding-top: var(--space-lg); padding-bottom: var(--space-lg); }
@@ -714,7 +708,7 @@ RESPONSIVE
   .footer__col.footer__brand { grid-column: span 2; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 468px) {
   :root { --space-xl: 56px; }
 
   .hero { min-height: auto; }

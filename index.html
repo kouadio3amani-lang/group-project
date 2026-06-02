@@ -1,3 +1,301 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- NAVBAR  -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+      <a href="#" class="navbar__logo" aria-label="Burger House — Accueil">
+        <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect x="4" y="8"  width="28" height="5" rx="2.5" fill="#F5B51A"/>
+          <rect x="6" y="15" width="24" height="5" rx="2.5" fill="#E02B2B"/>
+          <rect x="4" y="22" width="28" height="6" rx="3"   fill="#1A1A1A"/>
+        </svg>
+        Burger House
+      </a>
+
+      <ul class="navbar__links" role="list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#featured">Special</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#reservation">Contact</a></li>
+      </ul>
+
+    
+      <button class="navbar__toggle" id="navToggle"
+              aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <nav class="navbar__mobile" id="mobileMenu"
+       role="navigation" aria-label="Menu mobile" aria-hidden="true">
+    <a href="#hero"        onclick="closeMobileMenu()">Home</a>
+    <a href="#featured"   onclick="closeMobileMenu()">Special</a>
+    <a href="#menu"       onclick="closeMobileMenu()">Menu</a>
+    <a href="#events"     onclick="closeMobileMenu()">Events</a>
+    <a href="#reservation"onclick="closeMobileMenu()">Contact</a>
+  </nav>
+
+ <!-- HERO  -->
+  <section class="hero" id="hero" aria-label="Section principale">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="hero__eyebrow">It is a good time for the great taste of burger</span>
+        <h1 class="hero__title">Burger<br>Week</h1>
+        <p class="hero__sub">Des burgers artisanaux préparés avec les meilleurs ingrédients pour satisfaire toutes vos envies.</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--red">Try Out Today</a>
+        </div>
+      </div>
+
+      <div class="hero__badge" aria-label="Offre spéciale à partir de 5,49 $">
+        <span class="badge__price">$5.<small>49</small></span>
+        <span class="badge__label">Only</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED  -->
+  <section class="featured" id="featured" aria-label="Burgers populaires">
+    <div class="container">
+      <div class="section-header section-header--left">
+        <span class="kicker">Try Out Today</span>
+        <h2>Our Specials</h2>
+      </div>
+      <div class="featured__grid">
+        <article class="feat-card feat-card--large">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&q=80"
+               alt="Most Popular Burger – burger classique avec laitue et tomate" loading="lazy" />
+          <div class="feat-card__overlay">
+            <span class="feat-card__tag">Most Popular</span>
+            <h3 class="feat-card__title">Classic Burger</h3>
+          </div>
+        </article>
+
+        <div class="feat-card__stack">
+          <article class="feat-card">
+            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=700&q=80"
+                 alt="Most Fun More Taste – burger double" loading="lazy" />
+            <div class="feat-card__overlay">
+              <span class="feat-card__tag">Fan Favourite</span>
+              <h3 class="feat-card__title">Double Stack</h3>
+            </div>
+          </article>
+          <article class="feat-card">
+            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=700&q=80"
+                 alt="Fresh and Chili – burger épicé" loading="lazy" />
+            <div class="feat-card__overlay">
+              <span class="feat-card__tag">Spicy Pick</span>
+              <h3 class="feat-card__title">Fresh &amp; Chili</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+ <!-- MENU  -->
+  <section class="menu" id="menu" aria-label="Notre menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Always Tasty Burger</span>
+        <h2>Choose &amp; Enjoy</h2>
+        <p>Whether you crave classic flavors or daring combinations, our burgers are crafted to satisfy every taste bud — with juicy patties, fresh toppings, and the perfect bun to complete the experience.</p>
+      </div>
+
+      <div class="menu__grid">
+
+        <article class="menu-card">
+          <div class="menu-card__img-wrap">
+            <img class="menu-card__img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-f3mHDx9vG1SncaLi6lrVcaYQeOWyi8MZQ&s"
+              alt="Chicken Burger – poulet tendre et garnitures fraîches" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__tag">Signature</span>
+            <h3 class="menu-card__title">Chicken Burger</h3>
+            <p class="menu-card__desc">Sink your teeth into the timeless perfection of our Chicken Burger — tender, juicy chicken meets fresh, flavorful toppings for an unforgettable experience.</p>
+            <a href="#reservation" class="btn btn--red btn--sm">Order Now</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__img-wrap">
+            <img class="menu-card__img"
+              src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=700&q=80"
+              alt="Veggie Delight Burger – burger végétarien coloré" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__tag">Vegetarian</span>
+            <h3 class="menu-card__title">Veggie Delight</h3>
+            <p class="menu-card__desc">Embrace vibrant flavors with our Veggie Delight — crunchy vegetables and savory sauces create a mouthwatering experience in every bite.</p>
+            <a href="#reservation" class="btn btn--red btn--sm">Order Now</a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__img-wrap">
+            <img class="menu-card__img"
+              src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=700&q=80"
+              alt="BBQ Bacon Burger – burger bacon fumé avec sauce BBQ" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__tag">Bestseller</span>
+            <h3 class="menu-card__title">BBQ Bacon Burger</h3>
+            <p class="menu-card__desc">Smoky, savory perfection — crispy bacon, melted cheese, and a bold BBQ sauce deliver rich, bold flavors you'll come back for again and again.</p>
+            <a href="#reservation" class="btn btn--red btn--sm">Order Now</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+
+ <!-- EVENTS  -->
+  <section class="events" id="events" aria-label="Événements à venir">
+    <div class="container">
+      <div class="events__inner">
+        <div class="events__text">
+          <span class="kicker">Discover</span>
+          <h2>Upcoming<br>Events</h2>
+          <p>From exclusive burger tastings and chef collaborations to community outreach and seasonal celebrations — there's always something special on the horizon at Burger House.</p>
+          <p>Be the first to know about our upcoming events, promotions, and gatherings as we continue to bring joy and flavor to our cherished customers.</p>
+          <a href="#reservation" class="btn btn--red">Book Your Table</a>
+        </div>
+        <figure class="events__img">
+          <img src="https://media.istockphoto.com/id/2061716709/photo/grilled-rib-burger.jpg?s=612x612&w=0&k=20&c=QS37W9zjBE3GoOeR8ay3k_DS7oXPH07MBg-WHY5Joac="
+               alt="Burger grillé présenté lors d'un événement spécial" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION  -->
+  <section class="reservation" id="reservation" aria-label="Réservation de table">
+    <div class="container">
+      <div class="reservation__inner">
+        <div class="section-header">
+          <span class="kicker">Reservation</span>
+          <h2>Book Your Table</h2>
+          <p>Reserve your spot and enjoy the full Burger House experience — great food, great atmosphere, great company.</p>
+        </div>
+
+        <form class="res-form" novalidate aria-label="Formulaire de réservation" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="res-name">Full Name</label>
+              <input type="text"   id="res-name"   name="name"   placeholder="John Doe"       autocomplete="name"  required aria-required="true" />
+            </div>
+            <div class="form-field">
+              <label for="res-email">Email Address</label>
+              <input type="email"  id="res-email"  name="email"  placeholder="you@email.com"  autocomplete="email" required aria-required="true" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="res-date">Date</label>
+              <input type="date"   id="res-date"   name="date"   required aria-required="true" />
+            </div>
+            <div class="form-field">
+              <label for="res-time">Time</label>
+              <input type="time"   id="res-time"   name="time"   required aria-required="true" />
+            </div>
+            <div class="form-field">
+              <label for="res-people">Guests</label>
+              <input type="number" id="res-people" name="people" placeholder="2" min="1" max="20" required aria-required="true" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn--submit">Find a Table</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+ <!-- FOOTER  -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__inner">
+
+          <div class="footer__col footer__brand">
+            <a href="#" class="footer__logo" aria-label="Burger House">
+              <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <rect x="4" y="8"  width="28" height="5" rx="2.5" fill="#F5B51A"/>
+                <rect x="6" y="15" width="24" height="5" rx="2.5" fill="#E02B2B"/>
+                <rect x="4" y="22" width="28" height="6" rx="3"   fill="white"/>
+              </svg>
+              Burger House
+            </a>
+            <p>Welcome to Burger House, where passion for exceptional food and genuine hospitality come together. Dedicated to crafting the perfect burger experience, from the finest ingredients to every unparalleled bite.</p>
+            <nav class="footer__social" aria-label="Réseaux sociaux">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">in</a>
+              <a href="#" aria-label="YouTube">▶</a>
+              <a href="#" aria-label="Twitter / X">𝕏</a>
+            </nav>
+          </div>
+
+          <div class="footer__col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#featured">Our Specials</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#reservation">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul class="footer__contact-list">
+              <li>
+                <span class="icon" aria-hidden="true">📍</span>
+                <span>MG Road, Bangalore, 500089</span>
+              </li>
+              <li>
+                <span class="icon" aria-hidden="true">✉️</span>
+                <a href="mailto:info@burgerhouse.com">info@burgerhouse.com</a>
+              </li>
+              <li>
+                <span class="icon" aria-hidden="true">🕐</span>
+                <span>Mon – Sun: 11:00 AM – 11:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2024 Burger House. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
+=======
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -240,3 +538,4 @@
 
 </body>z
 </html>
+>>>>>>> d18272f262fd3ae8cb412392f2ed4fa813ecaa59
