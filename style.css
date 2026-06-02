@@ -682,17 +682,18 @@ button { font-family: var(--font-body); }
 .hero__badge   { animation: badge-pulse 3s ease-in-out infinite, fadeUp 0.6s 0.5s ease both; }
 
 
-<<<<<<< HEAD
+
  /* 14. RESPONSIVE  */
-@media (max-width: 960px) {
+@media (max-width: 960px){
   .navbar__links,
   .navbar__cta    { display: none; }
-=======
+}
+
 /* #RESPONSIVE  */
 @media  (max-width: 960px) {
   
   .navbar__links,.navbar__cta    { display: none; }
->>>>>>> d18272f262fd3ae8cb412392f2ed4fa813ecaa59
+
   .navbar__toggle { display: flex; }
 
   .hero__inner    { flex-direction: column; align-items: flex-start; padding-top: var(--space-lg); padding-bottom: var(--space-lg); }
